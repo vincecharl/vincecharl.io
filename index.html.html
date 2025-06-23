@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Love Letter for Pearl</title>
+<style>
+    body {
+        background: #ffe6f0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #b30059;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 20px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        flex-direction: column;
+    }
+    .letter-box {
+        background: white;
+        border: 3px solid #ff4da6;
+        border-radius: 15px;
+        padding: 30px;
+        max-width: 600px;
+        box-shadow: 0 8px 20px rgba(179, 0, 89, 0.3);
+        z-index: 10;
+        position: relative;
+    }
+    h1 {
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+    h2 {
+        margin-top: 5px;
+        font-weight: normal;
+        color: #ff1a75;
+    }
+    p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        margin-top: 30px;
+        white-space: pre-line; /* <-- This makes line breaks work */
+    }
+    .heart {
+        color: #ff1a75;
+        font-size: 2em;
+        margin-top: 30px;
+    }
+    /* Footer */
+    .footer {
+        margin-top: 20px;
+        font-size: 1em;
+        color: #b30059cc;
+        font-style: italic;
+        user-select: none;
+        z-index: 10;
+        position: relative;
+    }
+
+    /* Floating hearts container */
+    .heart-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        overflow: visible;
+        z-index: 1;
+    }
+    /* Single floating heart */
+    .floating-heart {
+        position: absolute;
+        font-size: 1.5em;
+        color: #ff1a75;
+        animation: floatUp 6s linear infinite;
+        opacity: 0.8;
+        user-select: none;
+    }
+
+    /* Different delays and positions for hearts */
+    .floating-heart:nth-child(1) {
+        left: 10%;
+        animation-duration: 5s;
+        animation-delay: 0s;
+        font-size: 1.8em;
+    }
+    .floating-heart:nth-child(2) {
+        left: 25%;
+        animation-duration: 7s;
+        animation-delay: 1.5s;
+        font-size: 1.2em;
+        opacity: 0.7;
+    }
+    .floating-heart:nth-child(3) {
+        left: 40%;
+        animation-duration: 6s;
+        animation-delay: 0.8s;
+        font-size: 1.5em;
+    }
+    .floating-heart:nth-child(4) {
+        left: 60%;
+        animation-duration: 8s;
+        animation-delay: 2s;
+        font-size: 2em;
+        opacity: 0.9;
+    }
+    .floating-heart:nth-child(5) {
+        left: 75%;
+        animation-duration: 5.5s;
+        animation-delay: 1.2s;
+        font-size: 1.3em;
+    }
+    .floating-heart:nth-child(6) {
+        left: 85%;
+        animation-duration: 7.5s;
+        animation-delay: 3s;
+        font-size: 1.7em;
+        opacity: 0.6;
+    }
+
+    @keyframes floatUp {
+        0% {
+            transform: translateY(100vh) scale(1);
+            opacity: 0.8;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-10vh) scale(1.3);
+            opacity: 0;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="heart-container">
+        <div class="floating-heart">❤️</div>
+        <div class="floating-heart">💖</div>
+        <div class="floating-heart">💕</div>
+        <div class="floating-heart">💗</div>
+        <div class="floating-heart">💘</div>
+        <div class="floating-heart">💞</div>
+    </div>
+
+    <div class="letter-box">
+        <h1>To My Pearl</h1>
+        <h2>(Lovee, Beyybiii ❤️)</h2>
+        <p>
+Every moment with you feels like a beautiful dream come true.
+Your smile brightens my darkest days, and your laughter is my favorite melody.
+I cherish you more than words can say, and my heart beats only for you.
+
+Stay amazing, my lovee, my beyybiii — forever and always.
+With all my love,
+<strong>Your Devoted One</strong>
+        </p>
+        <div class="heart">❤️❤️❤️</div>
+    </div>
+
+    <div class="footer">
+        Made by Vince, ur Bayybyy
+    </div>
+</body>
+</html>
